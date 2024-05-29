@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="interestCalculator.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav>
+		<div class="title_top"> Calculator.net</div>
+		<div >
+			<ul class="nav_items">
+				<li id="fin"> Financial</li>
+				<li id="fit"> Fitness Health</li>
+				<li id="math"> Math </li>
+				<li id="other"> Other </li>
+			</ul>
+		</div>
+	</nav>
+
+	<h1 class="header1"> Interest Calculator </h1>
+
+	<div class="paragraph1">
+
+		<p>This Compound Interest Calculator can help determine the compound interest accumulation and final</p>
+		<p> balances on both fixed principal amounts and additional periodic contributions. There are also optional</p>
+		<p>factors available for consideration, such as the tax on interest income and inflation.</p>
+	</div>
+
+	<div class="guide"> Modify the values and click the Calculate button to use </div>
+
+	<div class="calculator" >
+		<div id="init"> Initial Investment <input type="text" id="init_input"></input> </div>		
+		<div id="Annual"> Annual Contribution <input id="annual_input"></input> </div>
+		<div id="Month_cont"> Monthly Contribution <input id="monthly_input"></input> </div>
+		<div >
+			<label for = "contribution_timing">Contribution timing:</label>
+			<select id="contribution_timing">
+				<option value="end" name="contribution_timing">End of year</option>
+				<option value="beginning" name="contribution_timing">Beginning of year</option>
+			</select>
+		
+		</div>
+		<div id="init"> Interest rate <input id="int_rate"></input> </div>		
+		<div id="init"> Compound <input id="compound_times"></input> </div>		
+		<div id="init"> Investment length <input id="invest_length"></input> </div>		
+		<div id="init"> Tax rate <input id="tax_rate"></input> </div>		
+		<div id="init"> Inflation rate <input id="inflation_rate"></input> </div>
+		<div id="calc_btns">
+			<button class="eval_btn" onClick="eval_uate()"> Calculate</button>
+			<button class="clear"onClick="clear()">Clear</button>
+		</div>
+	</div>
+
+	<div class="results">
+		<h1 class="header_results">Results</h1>
+		<p id="end_bal">Ending balance</p>
+		<p id="end_bal2"></p>
+		<p id="principal">Total principal</p>
+		<p id="principal2"></p>
+		<p id="total_contributions">Total contributions</p>
+		<p id="total_contributions2"></p>
+		<p id="total_interest">Total interest</p>
+		<p id="total_interest2"></p>
+		<p id="init_investment">Interest of initial investment</p>
+		<p id="init_investment2"></p>
+		<p id="int_cont">Interest of contributions</p>
+		<p id="int_cont2"></p>
+		<p id="total_tax">Total tax</p>
+		<p id="total_tax2"></p>
+		<p id="intAfterTax">Total interest after tax</p>
+		<p id="intAfterTax2"></p>
+		<p id="buying_power">Buying power of the end balance after inflation adjustment</p>
+		<p id="buying_power2"></p>
+	</div>
+		
+	<script src="interestCalculator.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
